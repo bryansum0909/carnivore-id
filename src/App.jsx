@@ -9,6 +9,7 @@ import TempatBeli from './pages/TempatBeli';
 import ProfilSaya from './pages/ProfilSaya';
 
 import PanduanCarnivore from './pages/PanduanCarnivore';
+import BloodSugarTracker from './pages/BloodSugarTracker';
 
 const PAGES = {
   tracker: FoodTracker,
@@ -16,6 +17,7 @@ const PAGES = {
   menu: MenuCarnivore,
   beli: TempatBeli,
   panduan: PanduanCarnivore,
+  bloodsugar: BloodSugarTracker,
   profil: ProfilSaya,
 };
 

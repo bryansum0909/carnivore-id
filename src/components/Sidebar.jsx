@@ -5,6 +5,7 @@ const NAV_ITEMS = [
   { id: 'planner', icon: 'ti-calendar', label: 'Meal Planner' },
   { id: 'menu', icon: 'ti-tools-kitchen-2', label: 'Menu Carnivore' },
   { id: 'beli', icon: 'ti-shopping-bag', label: 'Tempat Beli' },
+  { id: 'bloodsugar', icon: 'ti-droplet', label: 'Gula Darah' },
   { id: 'panduan', icon: 'ti-book', label: 'Panduan Diet' },
   { id: 'profil', icon: 'ti-user-circle', label: 'Profil Saya' },
 ];
