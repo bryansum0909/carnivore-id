@@ -24,7 +24,7 @@ const PAGES = {
 function MobileNav({ activePage, setActivePage }) {
   const navItems = [
     { id: 'tracker', icon: 'ti-clipboard-list', label: 'Tracker' },
-    { id: 'planner', icon: 'ti-calendar', label: 'Planner' },
+    { id: 'bloodsugar', icon: 'ti-droplet', label: 'Gula Darah' },
     { id: 'menu', icon: 'ti-tools-kitchen-2', label: 'Menu' },
     { id: 'panduan', icon: 'ti-book', label: 'Panduan' },
     { id: 'profil', icon: 'ti-user-circle', label: 'Profil' },
