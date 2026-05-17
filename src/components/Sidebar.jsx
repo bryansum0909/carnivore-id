@@ -1,6 +1,7 @@
 import { useAuth } from '../hooks/useAuth';
 
 const NAV_ITEMS = [
+  { id: 'home', icon: 'ti-home', label: 'Dashboard' },
   { id: 'tracker', icon: 'ti-clipboard-list', label: 'Food Tracker' },
   { id: 'planner', icon: 'ti-calendar', label: 'Meal Planner' },
   { id: 'menu', icon: 'ti-tools-kitchen-2', label: 'Menu Carnivore' },

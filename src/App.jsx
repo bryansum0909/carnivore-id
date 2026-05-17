@@ -10,8 +10,10 @@ import ProfilSaya from './pages/ProfilSaya';
 
 import PanduanCarnivore from './pages/PanduanCarnivore';
 import BloodSugarTracker from './pages/BloodSugarTracker';
+import Dashboard from './pages/Dashboard';
 
 const PAGES = {
+  home: Dashboard,
   tracker: FoodTracker,
   planner: MealPlanner,
   menu: MenuCarnivore,
@@ -23,10 +25,10 @@ const PAGES = {
 
 function MobileNav({ activePage, setActivePage }) {
   const navItems = [
+    { id: 'home', icon: 'ti-home', label: 'Home' },
     { id: 'tracker', icon: 'ti-clipboard-list', label: 'Tracker' },
     { id: 'bloodsugar', icon: 'ti-droplet', label: 'Gula Darah' },
     { id: 'menu', icon: 'ti-tools-kitchen-2', label: 'Menu' },
-    { id: 'panduan', icon: 'ti-book', label: 'Panduan' },
     { id: 'profil', icon: 'ti-user-circle', label: 'Profil' },
   ];
   return (
@@ -54,7 +56,7 @@ function MobileNav({ activePage, setActivePage }) {
 
 export default function App() {
   const { user, loading } = useAuth();
-  const [activePage, setActivePage] = useState('tracker');
+  const [activePage, setActivePage] = useState('home');
   const PageComponent = PAGES[activePage];
 
   if (loading) {
@@ -75,7 +77,7 @@ export default function App() {
     <div style={{ display: 'flex', minHeight: '100vh' }}>
       <Sidebar activePage={activePage} setActivePage={setActivePage} />
       <main style={{ flex: 1, padding: '2rem 2.5rem', overflowY: 'auto', background: 'var(--surface)' }}>
-        <PageComponent />
+        <PageComponent setActivePage={setActivePage} />
       </main>
       <MobileNav activePage={activePage} setActivePage={setActivePage} />
       <style>{`
